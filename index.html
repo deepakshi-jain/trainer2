@@ -22,9 +22,9 @@ ul, #myUL {
   margin: 0;
   padding: 0;
 }
-.caret-down{
+/*.caret-down{
   color:blue;
-}
+}*/
 
 /*.caret {
   cursor: pointer;
@@ -33,56 +33,80 @@ ul, #myUL {
   -ms-user-select: none; 
   user-select: none;
 }
-
+*//*input[type="checkbox"]{
+  border:2px solid black;
+}*/
 .caret::before {
   content: "\25B6";
-  color: black;
+  color: white;
   display: inline-block;
   margin-right: 6px;
-}*/
+  margin-left: 32px;
+}
 
-/*.caret-down::before {
+.caret-down::before {
+   color:white;
   -ms-transform: rotate(90deg); 
   -webkit-transform: rotate(90deg); 
   transform: rotate(90deg);  
-}*/
+}
 .main{
   font-size:25px;
+  color:white;
 
 }
 .sub{
    font-size: 20px!important;
+   color:white;
 }
 .nested {
   display: none;
   color:black!important;
+  background-color: black
 }
-.ul2:hover{
+/*.ul2:hover{
   color: blue!important;
-}
+}*/
 
 .active {
   display: block;
 }
 .ul1:hover{
   cursor: pointer;
-  color:blue;
+ /* color:blue;*/
 }
+/*input[type=checkbox]{
+  outline:2px solid black;
+}*/
 .check{
   width: 20px;height: 20px;
-}
+ 
+  }
 /*.wid{
   width:250px;
 }*/
+/*ul2{
+  background-color: red;
+}*/
+.back {
+    width: 420px;
+    background-color: blue;
+    min-height: 81px;
+    padding: 2px;
+}
+.ul2{
+  color: white;
+}
 </style>
 </head>
 <body>
 <div class="container">
-<h2 class="text-center mt-4">Course Categories</h2>
+<h2 class="text-center mt-4 ">Course Categories</h2>
 <hr>
-
+<!-- <div class="back" style="padding: -1px!important;margin-top: 5px;">
 <ul id="myUL" class="main ul1 mt-4">
-  <li class="ul2"><span class="caret">1.Buisness Management</span>
+  <li class="ul2"><span class="caret" style=" margin-left: 12px;
+}">1.Buisness Management</span>
     <ul class="nested" >
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Human Resources</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Marketing</li>
@@ -94,13 +118,28 @@ ul, #myUL {
     </ul>
   </li>
 </ul>
-
-<hr class="wid">
-
+</div> -->
+<!-- <hr class="wid">-->
+  <div class="back" style="padding: 12px!important;margin-top: 5px;">
+<ul id="myUL" class="main ul1">
+  <li class="ul2"><span class="caret">1.Buisness Management</span>
+    <ul class="nested" >
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Human Resources</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Marketing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Finance And Accounting</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Digital Marketing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Trading</li>
+      
+      
+    </ul>
+  </li>
+</ul>
+</div>
+ <div class="back" style="padding: 12px!important;margin-top: 5px;">
 <ul id="myUL" class="main ul1">
   <li class="ul2"><span class="caret">2.IT & Software</span>
     <ul class="nested" >
-      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Web Development</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Web Development</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Mobile Development</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Data Science</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Programming Language</li>
@@ -110,11 +149,13 @@ ul, #myUL {
     </ul>
   </li>
 </ul>
-<hr class="wid">
+</div>
+
+<div class="back" style="padding: 12px!important;margin-top: 5px;">
 <ul id="myUL" class="main ul1">
   <li class="ul2"><span class="caret">3.Office Tools</span>
     <ul class="nested " >
-      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Advance Excel</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Advance Excel</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.CAD/CAM</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Tally</li>
       
@@ -122,12 +163,16 @@ ul, #myUL {
       
     </ul>
   </li>
+  </div>
+
 </ul>
-<hr class="wid">
+ <div class="back" style="padding: 12px!important;margin-top: 5px;">
+
 <ul id="myUL" class="main ul1">
+ 
   <li class="ul2"><span class="caret">4.Creative Tools</span>
     <ul class="nested" >
-      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Photography</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Photography</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Videography</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Web/Visual/Game Design</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Musical Instrument</li>
@@ -140,12 +185,16 @@ ul, #myUL {
       
     </ul>
   </li>
+ 
+
 </ul>
-<hr class="wid">
+ </div>
+  <div class="back" style="padding: 12px!important;margin-top: 5px;">
 <ul id="myUL" class="main ul1">
+ 
   <li class="ul2"><span class="caret">5.Personality Development</span>
     <ul class="nested" >
-      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;NLP</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.NLP</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Personal Finance</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Stress Management</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Cope Up Vuca World</li>
@@ -154,12 +203,15 @@ ul, #myUL {
       
     </ul>
   </li>
+  
 </ul>
-<hr class="wid">
-<ul id="myUL" class="main ul1">
+</div>
+
+<div class="back" style="padding: 12px!important;margin-top: 5px;">
+  <ul id="myUL" class="main ul1">
   <li class="ul2"><span class="caret">6.Solopreneurship</span>
     <ul class="nested" >
-      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Set-up-sole-prorietorship</li>
+      <li class="ul2" >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Set-up-sole-prorietorship</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Personal Branding</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Blog Writing</li>
       <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Wordpress/Website</li>
@@ -169,8 +221,10 @@ ul, #myUL {
     </ul>
   </li>
 </ul>
-<hr class="wid">
+</div>
+ <div class="back" style="padding: 12px!important;margin-top: 5px;">
 <ul id="myUL" class="main ul1">
+ 
   <li class="ul2"><span class="caret">7.Entrepreneurship</span>
     <ul class="nested" >
       
@@ -178,9 +232,13 @@ ul, #myUL {
       
     </ul>
   </li>
+  
 </ul>
-<hr class="wid">
+
+</div>
+<div class="back" style="padding: 12px!important;margin-top: 5px;">
 <ul id="myUL" class="main ul1">
+  
   <li class="ul2"><span class="caret">8.Health And Fitness</span>
     <ul class="nested" >
       
@@ -188,9 +246,14 @@ ul, #myUL {
       
     </ul>
   </li>
+ 
+
 </ul>
-<hr class="wid">
+ </div>
+ <div class="back" style="padding: 12px!important;margin-top: 5px;">
+
 <ul id="myUL" class="main ul1">
+  
   <li class="ul2"><span class="caret">9.Leverage Social Media for Career Advancement</span>
     <ul class="nested" >
       
@@ -198,9 +261,10 @@ ul, #myUL {
       
     </ul>
   </li>
+ 
 </ul>
 
-
+ </div>
 </div>
 <script>
 var toggler = document.getElementsByClassName("caret");

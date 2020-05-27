@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <!-- <link rel="stylesheet" type="text/css" href="landing1 page.css"> -->
+  <link rel='stylesheet' type='text/css' href='style.css'>
+  <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>
+  <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
+<style>
+   body {
+    font-family: 'Raleway';font-size: 22px;
+}
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+.caret-down{
+  color:blue;
+}
+
+/*.caret {
+  cursor: pointer;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}*/
+
+/*.caret-down::before {
+  -ms-transform: rotate(90deg); 
+  -webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);  
+}*/
+.main{
+  font-size:25px;
+
+}
+.sub{
+   font-size: 20px!important;
+}
+.nested {
+  display: none;
+  color:black!important;
+}
+.ul2:hover{
+  color: blue!important;
+}
+
+.active {
+  display: block;
+}
+.ul1:hover{
+  cursor: pointer;
+  color:blue;
+}
+.check{
+  width: 20px;height: 20px;
+}
+.wid{
+  width:250px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2 class="text-center mt-4">Course Categories</h2>
+<hr>
+
+<ul id="myUL" class="main ul1 mt-4">
+  <li class="ul2"><span class="caret">1.Buisness Management</span>
+    <ul class="nested" >
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Human Resources</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Marketing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Finance And Accounting</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Digital Marketing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Trading</li>
+      
+      
+    </ul>
+  </li>
+</ul>
+
+<hr class="wid">
+
+<ul id="myUL" class="main ul1">
+  <li class="ul2"><span class="caret">2.IT & Software</span>
+    <ul class="nested" >
+      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Web Development</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Mobile Development</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Data Science</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Programming Language</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Database Tools</li>
+      
+      
+    </ul>
+  </li>
+</ul>
+<hr class="wid">
+<ul id="myUL" class="main ul1">
+  <li class="ul2"><span class="caret">3.Office Tools</span>
+    <ul class="nested " >
+      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Advance Excel</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.CAD/CAM</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Tally</li>
+      
+      
+      
+    </ul>
+  </li>
+</ul>
+<hr class="wid">
+<ul id="myUL" class="main ul1">
+  <li class="ul2"><span class="caret">4.Creative Tools</span>
+    <ul class="nested" >
+      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Photography</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Videography</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Web/Visual/Game Design</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Musical Instrument</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Vocal</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;f.Dance</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;g.Doodling</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;h.DIY</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;i.Content Writing</li>
+      
+      
+    </ul>
+  </li>
+</ul>
+<hr class="wid">
+<ul id="myUL" class="main ul1">
+  <li class="ul2"><span class="caret">5.Personality Development</span>
+    <ul class="nested" >
+      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;NLP</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Personal Finance</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Stress Management</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Cope Up Vuca World</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;f.Buisness Communication Skills</li>
+      
+      
+    </ul>
+  </li>
+</ul>
+<hr class="wid">
+<ul id="myUL" class="main ul1">
+  <li class="ul2"><span class="caret">6.Solopreneurship</span>
+    <ul class="nested" >
+      <li >&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Set-up-sole-prorietorship</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Personal Branding</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Blog Writing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Wordpress/Website</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Digital Marketing</li>
+      
+      
+    </ul>
+  </li>
+</ul>
+<hr class="wid">
+<ul id="myUL" class="main ul1">
+  <li class="ul2"><span class="caret">7.Entrepreneurship</span>
+    <ul class="nested" >
+      
+      
+      
+    </ul>
+  </li>
+</ul>
+<hr class="wid">
+<ul id="myUL" class="main ul1">
+  <li class="ul2"><span class="caret">8.Health And Fitness</span>
+    <ul class="nested" >
+      
+      
+      
+    </ul>
+  </li>
+</ul>
+<hr class="wid">
+<ul id="myUL" class="main ul1">
+  <li class="ul2"><span class="caret">9.Leverage Social Media for Career Advancement</span>
+    <ul class="nested" >
+      
+      
+      
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+     this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+</html>

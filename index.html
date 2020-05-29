@@ -11,14 +11,15 @@
   <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>
   <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>
   <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script type="text/javascript">
 
 
   </script>
   <style type="text/css">
   	 body {
-    font-family: 'Raleway';font-size: 22px;
+    font-family: 'Raleway';
 }
 #first{
   background-color: white;
@@ -74,16 +75,25 @@
   display: block;
 }
 .ul1{
-      font-size: 19px;
+      font-size: 17px;
       color:#3b3bb1;
 	}
 .ul2{
-      font-size: 18px;
+      font-size: 16px;
       color:#5c71a0e3;
+      margin-left: -15px;
+
+
 	}
 	.ul22{
 background-color: grey
 	}
+  .fas{
+    font-size: 16px;
+  }
+  /*.check{
+    outline: #3b3bb1 1px solid;
+  }*/
   /*.active1{
     background-color: grey;
   }*/
@@ -97,7 +107,7 @@ background-color: grey
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col" class="text-center">Course Catalogue</th>
+      <th scope="col" class="text-center" style="color:#3b3bb1;font-size: 18px;">Course Catagories</th>
      
     </tr>
   </thead>
@@ -109,14 +119,14 @@ background-color: grey
 <ul id="myUL">
 	
   <li class="ul1">
-  	<span class="caret" id="f">1.Buisness&nbsp;&nbsp;&nbsp;></span>
-<div>
-    <ul class="nested">
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Human Resources</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Marketing</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Finance And Accounting</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Digital Marketing</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Trading</li>
+  	<span class="caret" id="f"><i class="fas fa-briefcase">&nbsp;</i>Business&nbsp;&nbsp;&nbsp;></span>
+<div >
+    <ul class="nested" id="fir">
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Human Resources</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Marketing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Finance And Accounting</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Digital Marketing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Trading</li>
     
     </ul>
 
@@ -132,14 +142,14 @@ background-color: grey
       <td class="second"><ul id="myUL">
   
   <li class="ul1">
-    <span class="caret" id="s">2.IT & Software&nbsp;&nbsp;&nbsp;></span>
+    <span class="caret" id="s"><i class='fas fa-laptop'></i>&nbsp;IT & Software&nbsp;&nbsp;&nbsp;></span>
 <div>
     <ul class="nested">
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Web Development</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Mobile Development</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Data Science</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Programming Languages</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Databases tools</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Web Development</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Mobile Development</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Data Science</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Programming Languages</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Databases tools</li>
     
     </ul>
 
@@ -153,12 +163,12 @@ background-color: grey
       <td class="third"><ul id="myUL">
   
   <li class="ul1">
-    <span class="caret" id="t">3.Office tools&nbsp;&nbsp;&nbsp;></span>
+    <span class="caret" id="t"><i class="fab fa-microsoft"></i>&nbsp;Office tools&nbsp;&nbsp;&nbsp;></span>
 <div>
     <ul class="nested">
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Advances Excel</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.CAD/CAM</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Tally</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Advances Excel</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;CAD/CAM</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Tally</li>
     
     </ul>
 
@@ -172,18 +182,18 @@ background-color: grey
       <td class="fourth"><ul id="myUL">
   
   <li class="ul1">
-    <span class="caret" id="fo">4.Creative tools&nbsp;&nbsp;&nbsp;></span>
+    <span class="caret" id="fo"><i class="fas fa-magic"></i>&nbsp;Creative tools&nbsp;&nbsp;&nbsp;></span>
 <div>
     <ul class="nested">
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Photography</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Vediography</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Web/Visual/Game design</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Musical Instruments</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Vocal</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;f.Dance</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;g.Doodling</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;h.DIY/li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;i.Content writing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Photography</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Vediography</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Web/Visual/Game design</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Musical Instruments</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Vocal</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Dance</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Doodling</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;DIY/li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Content writing</li>
     
     </ul>
 
@@ -197,15 +207,15 @@ background-color: grey
       <td class="fifth"><ul id="myUL">
   
   <li class="ul1">
-    <span class="caret" id="fi">5.Personality Development&nbsp;&nbsp;&nbsp;></span>
+    <span class="caret" id="fi"><i class="fas fa-street-view"></i>&nbsp;Personality Development&nbsp;&nbsp;&nbsp;></span>
 <div>
-    <ul class="nested">
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.NLP</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Personal Finance</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Stress Management</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Cope up VUCA World</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Languages</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Business Communication</li>
+    <ul class="nested" >
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;NLP</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Personal Finance</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Stress Management</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Cope up VUCA World</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Languages</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Business Communication</li>
     
     </ul>
 
@@ -219,13 +229,13 @@ background-color: grey
       <td class="sixth"><ul id="myUL">
   
   <li class="ul1">
-    <span class="caret" id="si">6.Solopreneurship&nbsp;&nbsp;&nbsp;></span>
+    <span class="caret" id="si"><i class="fas fa-user-alt"></i>&nbsp;Solopreneurship&nbsp;&nbsp;&nbsp;></span>
     <ul class="nested">
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;a.Set-up sole-proprietorship</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;b.Personal Branding</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;c.Blog Writing</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;d.Wordpress/Website</li>
-      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;e.Digital Marketing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Set-up sole-proprietorship</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Personal Branding</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Blog Writing</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Wordpress/Website</li>
+      <li class="ul2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="check">&nbsp;Digital Marketing</li>
     
     </ul>
 
@@ -239,7 +249,7 @@ background-color: grey
       <td class="seventh"><ul id="myUL">
   
   <li class="ul1">
-    <span class="caret" id="se">7.Entrepreneurship&nbsp;&nbsp;&nbsp;></span>
+    <span class="caret" id="se"><i class="fas fa-hand-holding-usd"></i>&nbsp;Entrepreneurship&nbsp;&nbsp;&nbsp;></span>
 
     <ul class="nested">
     </ul>
@@ -252,7 +262,7 @@ background-color: grey
   <tr>
       <td class="eight"><ul id="myUL">
         <li class="ul1">
-    <span class="caret" id="e">8.Health & Fitness &nbsp;&nbsp;&nbsp;></span>
+    <span class="caret" id="e"><i class="fas fa-heartbeat"></i>&nbsp;Health & Fitness &nbsp;&nbsp;&nbsp;></span>
 
     <ul class="nested">
     </ul>
@@ -265,7 +275,7 @@ background-color: grey
   <tr>
        <td class="nine"><ul id="myUL">
         <li class="ul1">
-    <span class="caret" id="n">9.Leverage Social Media for Career Advancement&nbsp;&nbsp;&nbsp;></span>
+    <span class="caret" id="n"><i class="fab fa-linkedin"></i>&nbsp;Leverage Social Media for Career Advancement&nbsp;&nbsp;&nbsp;></span>
 
     <ul class="nested">
     </ul>
@@ -296,7 +306,7 @@ background-color: grey
       document.querySelector(".first").style.background="ghostwhite";
    }
 
-
+    
   });
 
   $('#s').click(function(){
@@ -307,7 +317,7 @@ background-color: grey
    else{
       document.querySelector(".second").style.background="ghostwhite";
    }
-
+      
 
   });
 
@@ -343,7 +353,7 @@ background-color: grey
    else{
       document.querySelector(".fifth").style.background="ghostwhite";
    }
-
+      
 
   });
 
@@ -406,6 +416,7 @@ for (i = 0; i < toggler.length; i++) {
   toggler[i].addEventListener("click", function() {
   	
     this.parentElement.querySelector(".nested").classList.toggle("active");
+    document.getElementsById("fir").style.display="none";
    
    
   });
